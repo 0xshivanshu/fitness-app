@@ -3,8 +3,6 @@
 import React from 'react';
 import { View, StyleSheet, Text, TouchableOpacity, Alert } from 'react-native';
 import { TextInput } from 'react-native-paper';
-// --- THE FIX ---
-// We import axios directly here and get rid of the separate api.js file for now.
 import axios from 'axios';
 
 const SignupScreen = ({ navigation }) => {
@@ -21,7 +19,7 @@ const SignupScreen = ({ navigation }) => {
         try {
             console.log('Attempting to call API...');
             
-            const response = await axios.post('http://192.168.135.223:5001/api/auth/signup', {
+            const response = await axios.post('https://fitness-app-2jh7.onrender.com/api/auth/signup', {
                 email: email,
                 password: password,
             });
