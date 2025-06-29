@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "HABIT TRACKER",
-    "slug": "habit-tracker-app",
+    "slug": "frontend",
     "owner": "0xshivanshu",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -30,6 +30,12 @@
       "eas": {
         "projectId": "54d0796f-32ce-4eae-8f0e-002e4c4caae8"
       }
+    },
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/54d0796f-32ce-4eae-8f0e-002e4c4caae8"
     }
   }
 }
