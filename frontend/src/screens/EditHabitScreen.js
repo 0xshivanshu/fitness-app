@@ -25,7 +25,7 @@ const EditHabitScreen = ({ route, navigation }) => {
             
             // Call the PUT endpoint to update the habit
             await axios.put(
-                `http://192.168.239.223:5001/api/habits/${habit._id}`, 
+                `https://fitness-app-2jh7.onrender.com/api/habits/${habit._id}`, 
                 { name, description }, 
                 { headers: { 'x-auth-token': token } }
             );
