@@ -18,8 +18,7 @@ const CreateHabitScreen = ({ navigation }) => {
         try {
             const token = await AsyncStorage.getItem('userToken');
             
-            // Send only name and description
-            await axios.post('http://192.168.239.223:5001/api/habits', 
+            await axios.post('https://fitness-app-2jh7.onrender.com/api/habits', 
                 { name, description },
                 { headers: { 'x-auth-token': token } }
             );
