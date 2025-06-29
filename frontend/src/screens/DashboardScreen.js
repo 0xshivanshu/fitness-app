@@ -17,7 +17,7 @@ const DashboardScreen = ({ navigation }) => {
         try {
             const token = await AsyncStorage.getItem('userToken');
             if (!token) { logout(); return; }
-            const response = await axios.get('http://192.168.239.223:5001/api/habits', {
+            const response = await axios.get('https://fitness-app-2jh7.onrender.com/api/habits', {
                 headers: { 'x-auth-token': token }
             });
             setHabits(response.data);
