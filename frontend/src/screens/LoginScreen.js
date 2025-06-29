@@ -15,7 +15,7 @@ const LoginScreen = ({ navigation }) => {
             return Alert.alert('Login Failed', 'Please enter both email and password.');
         }
         try {
-            const response = await axios.post('http://192.168.239.223:5001/api/auth/login', {
+            const response = await axios.post('https://fitness-app-2jh7.onrender.com/api/auth/login', {
                 email,
                 password,
             });
