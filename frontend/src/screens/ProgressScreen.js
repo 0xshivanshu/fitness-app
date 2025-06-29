@@ -20,7 +20,7 @@ const ProgressScreen = ({ route }) => {
                 
                 // Call the backend endpoint to get progress data
                 const response = await axios.get(
-                    `http://192.168.239.223:5001/api/habits/${habitId}/progress`, 
+                    `https://fitness-app-2jh7.onrender.com/api/habits/${habitId}/progress`, 
                     { headers: { 'x-auth-token': token } }
                 );
 
